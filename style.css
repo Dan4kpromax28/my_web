@@ -441,6 +441,9 @@ table tr:nth-of-type(odd) td {
       flex: 100%;
       max-width: 100%;
     }
+    .table{
+        font-size: 10px;
+    }
   }
   .text{
     text-align:center;
