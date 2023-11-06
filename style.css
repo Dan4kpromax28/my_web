@@ -295,6 +295,7 @@ table tr:nth-of-type(odd) td {
 }
     
 @media (max-width: 768px) {
+    
     .grid-container{
         margin: 20px;
         padding: 0;
