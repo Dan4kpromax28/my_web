@@ -389,7 +389,10 @@ table tr:nth-of-type(odd) td {
     .section_with_3 {
         flex-direction: column;
         height: 100%;
+        padding: 5px;
+        margin: 10px;
       }
+      
       .grid {
         grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
       }
