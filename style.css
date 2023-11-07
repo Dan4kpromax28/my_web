@@ -13,13 +13,8 @@ h2 {
     color: var(--blue);
     text-align: center;
 }
-.title{
-    position:relative;
-    
-}
-.title button{
-    align-items:bottom;
-}
+
+
 body {
     background-color: var(--lightbeige);
     display: flex;
@@ -115,10 +110,13 @@ nav a.active:hover{
     margin: 60px;
     
 }
+
 .sections {
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     flex:1;
-    max-width: 500px;
+    max-width: 1300px;
     padding: 20px;
     background-color: #f2f2f2;
     border-radius: var(--border_radius);
@@ -127,6 +125,7 @@ nav a.active:hover{
     
   }
   button {
+    align-items: flex-end;
     padding: 10px;
     background-color: #ff6600;
     color: #fff;
@@ -293,35 +292,38 @@ table tr th {
 table tr:nth-of-type(odd) td {
     background-color: var(--white);
 }
+.contact{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contact-info{
+    font-family: var(--fontRoboto);
+    font-size: 30px;
+    color: var(--blue);
+    text-align: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.contact-info a{
+    text-decoration: none;
+    color: orange;
+   
+}
+
     
 @media (max-width: 768px) {
     
-    .grid-container{
-        margin: 20px;
-        padding: 0;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto auto;
-        gap: 20px;
-        
-    }
-    .text-section{
-        margin-top: 40px;
-        grid-column: 1 / 2;
-        grid-row: 1 / 2;
-    }
-    .table-container{
-        grid-column: 1/2;
-        grid-row: 2/3;
-    }
-    .video-section{
-        grid-column: 1 / 2;
-        grid-row: 3 / 4;
-    }
-    .text-section1{
-        grid-column: 1 / 2;
-        grid-row: 4 / 5;
-    }
+   
     header {
         flex-direction: column;
         align-items: center;
@@ -452,3 +454,34 @@ table tr:nth-of-type(odd) td {
   .text{
     text-align:center;
   }
+  @media (max-width: 1200px) {
+    
+    .grid-container{
+        margin: 20px;
+        padding: 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+        gap: 20px;
+        
+    }
+   
+   
+    .text-section{
+        margin-top: 40px;
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+    .table-container{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .video-section{
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+    .text-section1{
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+    }
+}
