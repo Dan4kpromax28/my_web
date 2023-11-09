@@ -16,7 +16,10 @@ h2 {
     text-align: center;
 }
 
-
+.contact-info li::before{
+    content: "\1F426";
+    
+}
 body {
     background-color: var(--lightbeige);
     display: flex;
@@ -327,7 +330,7 @@ table tr:nth-of-type(odd) .index {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: left;
+    text-align: center;
 
 }
 .contact-info a{
