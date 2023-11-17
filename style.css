@@ -11,7 +11,11 @@
     --gradient: linear-gradient(135deg, #102C57 0%,#0e469a 100%);
 }
 
-h2 {
+h2{
+    color: var(--blue);
+    text-align: center;
+}
+h1{
     color: var(--blue);
     text-align: center;
 }
@@ -53,7 +57,7 @@ nav {
     display: flex;
     border: 5px;   
 }
-.logo h1{
+.logo p{
     font-size: 2em;
     margin-block-start: 0.67em;
     margin-block-end: 0.67em;
@@ -78,8 +82,6 @@ nav a {
 nav a:hover{
     background-color: var(--lightbeige);
     color: var(--blue);
-    
-    margin: none;
     border-radius: var(--border_radius);
 }
 nav a.active{
@@ -88,7 +90,7 @@ nav a.active{
     border-radius: var(--border_radius);
 }
 nav a.active:hover{
-    background-color: var(#F99417);
+    background-color: #F99417;
     color: var(--blue);
     padding: 32px;
 }
@@ -103,7 +105,7 @@ nav a.active:hover{
     justify-content: space-around;
     align-items: center; 
 }
-.cardtext h2{
+.cardtext h1{
     color: var(--blue);
     font-family: var(--fontYoung);
     font-size: 2.5rem;
@@ -124,8 +126,8 @@ nav a.active:hover{
     gap: 2rem;
     margin: 50px;
     margin-top: 150px;
-    
 }
+
 
 .sections {
     display: flex;
@@ -150,13 +152,7 @@ nav a.active:hover{
     box-shadow: 3px 3px 3px  var(--blue);
     border: none;
     align-items: end;
-    
-
-
   }
-  
-   
-
   .text_in_ol{
     text-align: left;
     font-family: var(--fontRoboto) ;
@@ -170,11 +166,18 @@ nav a.active:hover{
     font-weight: bold;
     color: var(--blue);
   }
-  h2{
+  h1{
     font-family: var(--fontRoboto);
     font-weight: bold;
     font-size: 40px;
     line-height: 48px;
+    letter-spacing: -0.5px;
+  }
+  h2{
+    font-family: var(--fontRoboto);
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 38px;
     letter-spacing: -0.5px;
   }
   h3{
@@ -340,6 +343,25 @@ table tr:nth-of-type(odd) .index {
     text-decoration: none;
     color: orange;
 }
+.row {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  .text{
+    text-align:center;
+  }
 
   
 
@@ -382,15 +404,13 @@ table tr:nth-of-type(odd) .index {
         width: 100%;
     }
     nav a.active{
-        background-color: #F99417;
+
         color: var(--lightbeige);
         padding: 10px;
         padding-inline: 20vw;
         border-radius: var(--header_radius);
     }
     nav a.active:hover{
-        background-color: var(#F99417);
-        color: var(--blue);
         padding: 10px;
         padding-inline: 20vw;
         border-radius: var(--header_radius);
@@ -427,29 +447,13 @@ table tr:nth-of-type(odd) .index {
         width: 600px;
     }
 }
-.row {
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
-  }
-  .column {
-    flex: 25%;
-    max-width: 25%;
-    padding: 0 4px;
-  }
-  .column img {
-    margin-top: 8px;
-    vertical-align: middle;
-    width: 100%;
-  }
-  @media screen and (max-width: 800px) {
+@media (max-width: 800px) {
     .column {
       flex: 50%;
       max-width: 50%;
     }
-  } 
-  @media screen and (max-width: 600px) {
+} 
+  @media (max-width: 600px) {
     .column {
       flex: 100%;
       max-width: 100%;
@@ -457,10 +461,7 @@ table tr:nth-of-type(odd) .index {
     .table{
         font-size: 10px;
     }
-  }
-  .text{
-    text-align:center;
-  }
+}
   @media (max-width: 1200px) {
     .grid-container{
         margin: 20px;
@@ -487,4 +488,12 @@ table tr:nth-of-type(odd) .index {
         grid-column: 1 / 2;
         grid-row: 4 / 5;
     }
+}
+@media (min-width: 2000px){
+    .section_with_3{
+        margin-top: 270px;
+    }
+}
+.margin{
+    margin-top: 50px;
 }
