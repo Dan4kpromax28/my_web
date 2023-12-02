@@ -125,7 +125,6 @@ nav a.active:hover{
     justify-content: space-evenly;
     gap: 2rem;
     margin: 50px;
-    margin-top: 150px;
 }
 
 
@@ -219,23 +218,8 @@ footer {
 .imp{
     height:400px
 }
-.cardimg figure figcaption {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    display: block;
-    width: 100%;
-    padding: 0.5rem 1rem;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: var(--white);
-   font-family: var(--fontRoboto);
-   }
-.video-section {
-    width: 100%; 
-    height: 0;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio for YouTube videos */
-    position: relative;
-}
+
+
 .video-ch{
     position:absolute;
     width: 100%;
@@ -256,10 +240,11 @@ h3{
     padding-top: 100px;
     padding-left: 100px;
     padding-right: 100px;
+    padding-bottom: 100px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto;
-    gap: 50px;
+    grid-gap: 50px;
     
 }
 .grid-container p{
@@ -280,6 +265,11 @@ h3{
 .video-section{
     grid-column: 1 / 3;
     grid-row: 2 / 3;
+    width: 100%; 
+    height: 0;
+    padding-bottom: 56.25%; 
+    position: relative;
+
 }
 .grid-item {
     display: flex;
@@ -404,7 +394,6 @@ table tr:nth-of-type(odd) .index {
         width: 100%;
     }
     nav a.active{
-
         color: var(--lightbeige);
         padding: 10px;
         padding-inline: 20vw;
